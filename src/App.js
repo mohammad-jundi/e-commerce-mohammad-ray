@@ -4,6 +4,7 @@ import Nav from './Nav'
 import About from './About'
 import AddToCart from './AddToCart'
 import { BrowserRouter as Router, Route } from "react-router-dom";
+import product from './product'
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Route exact path="/" component={Products} />
       <Route path="/about" component={About} />
       <Route path="/addtocart" component={AddToCart} />
+      <Route path="/product" component={product} />
     </Router>
   );
 }
